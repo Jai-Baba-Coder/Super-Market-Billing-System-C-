@@ -34,6 +34,40 @@ The **Supermarket Billing System** is a console-based application developed in C
 4. **Exiting the Program:**
    - The program can be safely exited via the menu, ensuring all data is saved and the application is closed properly.
 
+## Output Example
+
+### Main Menu:
+```plaintext
+*****************************************
+** Welcome to Supermarket Billing Software **
+*****************************************
+1. Add items
+2. Print bill
+3. Exit
+
+Enter choice >>
+```
+
+### Adding Items:
+```plaintext
+Enter item name >> Milk
+Enter total price of item >> 50
+Enter total number of items brought >> 10
+Item added successfully
+```
+
+### Generating Bills:
+```plaintext
+Enter item >> Milk
+Enter total number of items >> 2
+Item | Rate | Quantity | Amount
+Milk 50 2 100
+
+Counting total bill...
+Total bill--------------100
+Thanks for shopping with us!
+```
+
 ## File Structure
 - **Bill_Print.txt:** Stores the item details (name, rate, quantity) for persistent storage.
 - **Bill_Temp.txt:** A temporary file used during the bill generation process to update item quantities.
